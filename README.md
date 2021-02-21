@@ -41,7 +41,9 @@ will serve as a helpful study guide for the exam.
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw05.git
    ```
 
-1. Change into the `cs1302-hw05` directory that was just created and look around. 
+1. Change into the `cs1302-hw05` directory that was just created and look around. You should see a `Node` class
+   in the `src` directory. This class is very similar to the `Node` class used in the
+   [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/adt-and-links/adt-and-links.md)
 
    <!-- Use the following to download the JAR file that accompanies your `cs1302-phased-list` project:
    
@@ -58,52 +60,7 @@ will serve as a helpful study guide for the exam.
    [`Node` API Documentation](https://webwork.cs.uga.edu/~bjb211/node-doc/cs1302/hw05/Node.html).
    What is the FQN of the _package_ that contains `Node`?
 
-1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
-   within `src`.
-
-   ```java
-   package cs1302.hw05;
-
-   public class Driver {
-   
-       public static void main(String[] args) {
-
-           // CODE BLOCK 1
-           Node a = new Node();
-           a.setStr("Billy");
-        
-           // CODE BLOCK 2
-           new Node("Linda", a);
-        
-           // CODE BLOCK 3
-           Node b = new Node("Juno");
-           b.setNext(a);
-           a.setNext(new Node("Sally"));
-           b.getNext().getNext().setNext(new Node("Barry"));
-        
-           // CODE BLOCK 4
-           Node c = b.getNext().getNext();
-           c.getNext().setNext(new Node("Simon"));
-
-           // CODE BLOCK 5
-           System.out.println(c.getNext().getNext().getNext());
-           System.out.println(b.getStr());
-           System.out.println(a.getNext().getNext().getStr());
-           System.out.println(c.getNext().getNext().getStr());
-
-           // CODE BLOCK 6
-           a.setNext(new Node("Simone"));
-
-           // CODE BLOCK 7
-           System.out.println(a.getNext().getNext());
-        
-       } // main
-
-   } // Driver
-   ```
-
-1. **Please read this entire bullet point, including sub-bullets, before continuing.**
-   Consider the following example code snippet:
+1. Consider the following example code snippet:
    
    ```java
    Node example = null;                 // line 1
@@ -135,22 +92,67 @@ will serve as a helpful study guide for the exam.
                    | next ----------|--/    | next = null    |
                    \----------------/       \----------------/
    ```
-
-   Now, for _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
-   illustrates any nodes that have been created along with their associated `str` and `next` references. 
-   Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
-   the object it references. **Redraw the entire picture after each line.** Here are some things
-   to note:
    
-   * Although the associated string is also a reference, you may draw it within the node. 
-   * Number each step in your notes. There are 7 lines among `CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`,
-     so we expect 7 steps/diagrams in your notes for this part. 
-   * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
-     should also be included in the diagram.
+1. Create a `Driver` program using the code below but **don't run it yet**. Make sure you place the file in the proper directory within `src`. 
+   Before running the code, we want you to trace through it (illustrate it, like we did above) carefully to make sure you understand it. 
 
-   **Really, redraw the entire picture after each line.** 
-   If you're unsure what we mean, then ask.   
+   * For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
+     illustrates any nodes that have been created along with their associated `str` and `next` references. 
+     Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
+     the object it references. **Redraw the entire picture after each line.** Here are some things
+     to note:
+   
+        * Although the associated string is also a reference, you may draw it within the node. 
+        * Number each step in your notes. There are 7 lines among `CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`,
+          so we expect 7 steps/diagrams in your notes for this part. 
+        * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
+          should also be included in the diagram.
+          
+   ```java
+   package cs1302.hw05;
 
+   public class Driver {
+   
+       public static void main(String[] args) {
+
+           // CODE BLOCK 1
+           Node a = new Node("Joe");
+           a.setItem("Billy");
+        
+           // CODE BLOCK 2
+           new Node("Linda", a);
+        
+           // CODE BLOCK 3
+           Node b = new Node("Juno");
+           b.setNext(a);
+           a.setNext(new Node("Sally"));
+           b.getNext().getNext().setNext(new Node("Barry"));
+        
+           // CODE BLOCK 4
+           Node c = b.getNext().getNext();
+           c.getNext().setNext(new Node("Simon"));
+
+           // CODE BLOCK 5
+           System.out.println(c.getNext().getNext().getNext());
+           System.out.println(b.getItem());
+           System.out.println(a.getNext().getNext().getItem());
+           System.out.println(c.getNext().getNext().getItem());
+
+           // CODE BLOCK 6
+           a.setNext(new Node("Simone"));
+
+           // CODE BLOCK 7
+           System.out.println(a.getNext().getNext());
+        
+       } // main
+
+   } // Driver
+   ```
+
+1. For this checkpoint (code blocks 1-3), there is no output. However, we've provided the sample
+   solutions for the exercise so far in [CP1.md](CP1.md). Please check your answers closely and
+   fix any discrepancies before moving on to the next checkpoint.
+   
 <hr/>
 
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
@@ -182,6 +184,7 @@ will serve as a helpful study guide for the exam.
    `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
    program execution, then make a note of it, then try to fix your diagrams and output 
    before claiming this checkpoint.
+   
    
 <hr/>
 
