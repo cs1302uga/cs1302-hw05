@@ -2,10 +2,6 @@
 
 ![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
 
-> Roses are red. 
-> Violets are blue. 
-> `error: ';' expected` in `Driver.java` on line `142`.
-
 This class exercise explores how to work with nodes commonly used in linked lists. 
 
 ## Prerequisite Knowledge
@@ -80,7 +76,7 @@ will serve as a helpful study guide for the exam.
    ```
    // after line 2
                    /----------------\
-   example ------->| str -> "Hello" |
+   example ------->| item -> "Hello"|
                    | next = null    |
                    \----------------/
    ```
@@ -88,7 +84,7 @@ will serve as a helpful study guide for the exam.
    ```
    // after line 3
                    /----------------\       /----------------\
-   example ------->| str -> "Hello" |   /-->| str -> "World" |
+   example ------->| item -> "Hello"|   /-->| item -> "World"|
                    | next ----------|--/    | next = null    |
                    \----------------/       \----------------/
    ```
@@ -97,7 +93,7 @@ will serve as a helpful study guide for the exam.
    Before running the code, we want you to trace through it (illustrate it, like we did above) carefully to make sure you understand it. 
 
    * For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`** (only these three blocks for now), draw a diagram that 
-     illustrates any nodes that have been created along with their associated `str` and `next` references. 
+     illustrates any nodes that have been created along with their associated `item` and `next` references. 
      Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
      the object it references. **Redraw the entire picture after each line.** Here are some things
      to note:
@@ -164,27 +160,31 @@ will serve as a helpful study guide for the exam.
 1. **Please read this entire bullet point, including sub-bullets, before continuing.**
    For _each line_ in **`CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`**, 
    draw a diagram that illustrates any nodes that have been created along with their associated 
-   `str` and `next` references. Like before, **redraw the entire picture after each line.** 
+   `item` and `next` references. Like before, **redraw the entire picture after each line.** 
    Here are some things to note:
    
    * Number each step in your notes, starting with 8 (which is the first line in `CODE BLOCK 4`).
      There are 8 lines among `CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`,
      so we expect 8 steps in your notes for this part.
    * If a line contains a `println` statement, then you can simply write its output.
-   
-1. Make sure you are in the `cs1302-hw05` directory. Write the exact command to:
+
+1. Before running the application, write the expected output in your notes.
+
+1. Make sure you are in the `cs1302-hw05` directory. In your notes, write the exact command to:
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
    1. Run `cs1302.list.Driver`.
    
-   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
+<!--   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
    into `bin`; and ii) the compiled code in the JAR file. You will need to place the paths to the default 
-   package locations for both on the class path in order to run your program.
-
+   package locations for both on the class path in order to run your program. -->
+   
 1. Write the output from the program in your notes. If your output for lines 10, 11, 12, and 13 (from
    `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
    program execution, then make a note of it, then try to fix your diagrams and output 
    before claiming this checkpoint.
    
+1. Add the actual output from running the application to your `SUBMISSION.md` file as explained in 
+   the submission instructions below. 
    
 <hr/>
 
@@ -194,7 +194,16 @@ will serve as a helpful study guide for the exam.
 
 ### Checkpoint 3 Steps
 
-1. In `Driver.java`, remove the last two Java instructions from the `main` method.
+1. In `Driver.java`, remove the last two Java instructions (code blocks 6 and 7) from the `main` method. 
+   These two lines are:
+
+   ```java
+   // CODE BLOCK 6                                                                                                                                               
+   a.setNext(new Node("Simone"));
+
+   // CODE BLOCK 7                                                                                                                                               
+   System.out.println(a.getNext().getNext());
+   ```
 
 1. In `Driver.java`, add a method to print the string value of an arbitrary `Node` starting from
    some specified `Node`. **Below is the signature for the method you should implement,** including
@@ -205,11 +214,11 @@ will serve as a helpful study guide for the exam.
    /**
     * Prints the string value for a node. Starting with {@code node}, this method attempts
     * to traverse {@code numLinks}-many {@code getNext()} links, then prints the result of 
-    * calling {@code getStr()} on the very last node in its traversal. 
+    * calling {@code getItem()} on the very last node in its traversal. 
     *
     * @param node      starting node
     * @param numLinks  number of links to traverse
-    * @throws NullPointerException when an attempt is made to call {@code getStr()} or
+    * @throws NullPointerException when an attempt is made to call {@code getItem()} or
     *         {@code getNext()} using a {@code null} reference.
     */
    public static void printNode(Node node, int numLinks) {
@@ -239,10 +248,12 @@ will serve as a helpful study guide for the exam.
    printNode(c.getNext(), 3);
    ```
       
-1. Compile and run your `Driver` program. Then, make sure it passes the `checkstyle` audit.
+1. Compile and run your `Driver` program and make sure all code in the `src` directory passes the `checkstyle` audit.
 
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, indicate the reason(s) in your notes.
+
+1. **NOTE:** You do not need to include the output of this step in your `SUBMISSION.md` file as we will be able to run the program to see the output.
 
 <hr/>
 
@@ -258,13 +269,17 @@ will serve as a helpful study guide for the exam.
    directory with the following information:
 
    1. Your name and UGA ID number; and
-   1. Full URL for your hosted API website 
-   
+   1. The full output of the application at the end of checkpoint 2 (before the step 3 modifications).
+  
    Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    Sally Smith (811-000-999)
-   https://webwork.cs.uga.edu/~your_username/cs1302-hw05-doc/
+   output line 1
+   output line 2
+   output line 3
+   ...
+   output line n
    ```
 
 1. Change directories to the parent of `cs1302-hw05` (e.g., `cd ..` from `cs1302-hw05`). If you would like
