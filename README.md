@@ -11,7 +11,6 @@ This class exercise explores how to work with nodes commonly used in linked list
 ## Prerequisite Knowledge
 
 * [CSCI 1302 Reference Variable Refresher](https://github.com/cs1302uga/cs1302-tutorials/blob/master/refresher/variables.md)
-* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Course-Specific Learning Outcomes
 
