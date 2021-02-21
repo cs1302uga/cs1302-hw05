@@ -24,9 +24,12 @@ and stacks in solving typical problems.  Generate user-facing API documentation 
 In your notes, clearly answer the following questions. These instructions assume that you are 
 logged into the Odin server. 
 
-**NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
-command that you typed to make the related action happen. If context is necessary (e.g., the 
-command depends on your present working directory), then please note that context as well.
+**NOTE:** For each step, please provide in your notes the full command that you typed to make the related 
+action happen along with an explanation of why that command worked. Some commands require multiple options. 
+It is important to not only recall what you typed but also why you typed each of them. If context is necessary 
+(e.g., the command depends on your present working directory), then please note that context as well.
+You won't need to submit your notes in your final submission. However, if done properly, your exercise notes 
+will serve as a helpful study guide for the exam.
 
 ## Exercise Steps
 
@@ -38,50 +41,49 @@ command depends on your present working directory), then please note that contex
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw05.git
    ```
 
-1. Change into the `cs1302-hw05` directory that was just created and look around. There should be
-   almost nothing there! That's okay. Use the following to download the JAR file that accompanies your
-   `cs1302-listadt` project:
+1. Change into the `cs1302-hw05` directory that was just created and look around. 
+
+   <!-- Use the following to download the JAR file that accompanies your `cs1302-phased-list` project:
    
    ```
-   $ wget https://github.com/cs1302uga/cs1302-listadt/raw/master/listadt.jar
+   $ wget ##INSERT LINK HERE
    ```
    
    **NOTE:** This is a separate download. When you followed (or follow) the instructions provided
    in the project description for how to download the project, you will automatically get a copy of
    the JAR file that you can use with the project.
-
+   -->
+   
 1. For convenience, here is a link to the 
-   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html).
-   What is the FQN of the _package_ that contains `StringList.Node`?
+   [`Node` API Documentation](https://webwork.cs.uga.edu/~bjb211/node-doc/cs1302/hw05/Node.html).
+   What is the FQN of the _package_ that contains `Node`?
 
 1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
    within `src`.
 
    ```java
-   package cs1302.list;
-
-   import cs1302.listadt.StringList;
+   package cs1302.hw05;
 
    public class Driver {
    
        public static void main(String[] args) {
 
            // CODE BLOCK 1
-           StringList.Node a = new StringList.Node();
+           Node a = new Node();
            a.setStr("Billy");
         
            // CODE BLOCK 2
-           new StringList.Node("Linda", a);
+           new Node("Linda", a);
         
            // CODE BLOCK 3
-           StringList.Node b = new StringList.Node("Juno");
+           Node b = new Node("Juno");
            b.setNext(a);
-           a.setNext(new StringList.Node("Sally"));
-           b.getNext().getNext().setNext(new StringList.Node("Barry"));
+           a.setNext(new Node("Sally"));
+           b.getNext().getNext().setNext(new Node("Barry"));
         
            // CODE BLOCK 4
-           StringList.Node c = b.getNext().getNext();
-           c.getNext().setNext(new StringList.Node("Simon"));
+           Node c = b.getNext().getNext();
+           c.getNext().setNext(new Node("Simon"));
 
            // CODE BLOCK 5
            System.out.println(c.getNext().getNext().getNext());
@@ -90,7 +92,7 @@ command depends on your present working directory), then please note that contex
            System.out.println(c.getNext().getNext().getStr());
 
            // CODE BLOCK 6
-           a.setNext(new StringList.Node("Simone"));
+           a.setNext(new Node("Simone"));
 
            // CODE BLOCK 7
            System.out.println(a.getNext().getNext());
@@ -104,9 +106,9 @@ command depends on your present working directory), then please note that contex
    Consider the following example code snippet:
    
    ```java
-   StringList.Node example = null;                 // line 1
-   example = new StringList.Node("Hello");         // line 2
-   example.setNext(new StringList.Node("World"));  // line 3
+   Node example = null;                 // line 1
+   example = new Node("Hello");         // line 2
+   example.setNext(new Node("World"));  // line 3
    ```
    
    **We can illustrate this snippet by drawing a diagram for the first line**, 
@@ -191,8 +193,8 @@ command depends on your present working directory), then please note that contex
 
 1. In `Driver.java`, remove the last two Java instructions from the `main` method.
 
-1. In `Driver.java`, add a method to print the string value of an arbitrary `StringList.Node` starting from
-   some specified `StringList.Node`. **Below is the signature for the method you should implement,** including
+1. In `Driver.java`, add a method to print the string value of an arbitrary `Node` starting from
+   some specified `Node`. **Below is the signature for the method you should implement,** including
    some Javadoc documentation. You do **NOT** need to explicitly create and `throw` the `NullPointerException`
    mentioned in the comment (it should get thrown automatically under the described condition). 
    
@@ -207,7 +209,7 @@ command depends on your present working directory), then please note that contex
     * @throws NullPointerException when an attempt is made to call {@code getStr()} or
     *         {@code getNext()} using a {@code null} reference.
     */
-   public static void printNode(StringList.Node node, int numLinks) {
+   public static void printNode(Node node, int numLinks) {
        ...
    } // printNode
    ```
