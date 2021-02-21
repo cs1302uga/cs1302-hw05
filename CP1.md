@@ -1,14 +1,14 @@
-### STEP 5 (`CODE BLOCK 1--3`)
+### `CODE BLOCK 1--3`
 
-1. **`StringList.Node a = new StringList.Node();`**
+1. **`Node a = new Node("Joe");`**
    ```
      +--+     +----------------+
-   a | -|----◆| str = null     |
+   a | -|----◆| str = "Joe     |
      +--+     | next = null    |
               +----------------+
    ```
 
-1. **`a.setStr("Billy");`**
+1. **`a.setItem("Billy");`**
    ```
      +--+     +----------------+
    a | -|----◆| str -◆ "Billy" |
@@ -16,7 +16,7 @@
               +----------------+
    ```
 
-1. **`new StringList.Node("Linda", a);`**
+1. **`new Node("Linda", a);`**
    ```
               +----------------+
               | str -◆ "Linda" |
@@ -32,7 +32,7 @@
               +----------------+
    ```
 
-1. **`StringList.Node b = new StringList.Node("Juno");`**
+1. **`Node b = new Node("Juno");`**
    ```
               +----------------+
               | str -◆ "Linda" |
@@ -77,7 +77,7 @@
               +----------------+
    ```
 
-1. **`a.setNext(new StringList.Node("Sally"));`**
+1. **`a.setNext(new Node("Sally"));`**
    ```
               +----------------+
               | str -◆ "Linda" |
@@ -101,7 +101,7 @@
               +----------------+
    ```
 
-1. **`b.getNext().getNext().setNext(new StringList.Node("Barry"));`**
+1. **`b.getNext().getNext().setNext(new Node("Barry"));`**
    ```
               +----------------+
               | str -◆ "Linda" |
@@ -123,3 +123,4 @@
    b | -|----◆| str -◆ "Juno"  |  |
      +--+     | next ----------|--+
               +----------------+
+   ```              
