@@ -1,6 +1,6 @@
-# cs1302-ce11 Lovable Linked Lists 
+# cs1302-hw05 Lovable Linked Lists 
 
-![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
+![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
 
 > Roses are red. 
 > Violets are blue. 
@@ -11,7 +11,6 @@ This class exercise explores how to work with nodes commonly used in linked list
 ## Prerequisite Knowledge
 
 * [CSCI 1302 Reference Variable Refresher](https://github.com/cs1302uga/cs1302-tutorials/blob/master/refresher/variables.md)
-* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Course-Specific Learning Outcomes
 
@@ -33,13 +32,13 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1 Steps - Getting Started
 
-1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce11`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-hw05`:
 
    ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce11.git
+   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw05.git
    ```
 
-1. Change into the `cs1302-ce11` directory that was just created and look around. There should be
+1. Change into the `cs1302-hw05` directory that was just created and look around. There should be
    almost nothing there! That's okay. Use the following to download the JAR file that accompanies your
    `cs1302-listadt` project:
    
@@ -169,7 +168,7 @@ command depends on your present working directory), then please note that contex
      so we expect 8 steps in your notes for this part.
    * If a line contains a `println` statement, then you can simply write its output.
    
-1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
+1. Make sure you are in the `cs1302-hw05` directory. Write the exact command to:
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
    1. Run `cs1302.list.Driver`.
    
@@ -243,6 +242,46 @@ command depends on your present working directory), then please note that contex
 <hr/>
 
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-hw05`
+   directory with the following information:
+
+   1. Your name and UGA ID number; and
+   1. Full URL for your hosted API website 
+   
+   Here is an example of the contents of `SUBMISSION.md`.
+   
+   ```
+   Sally Smith (811-000-999)
+   https://webwork.cs.uga.edu/~your_username/cs1302-hw05-doc/
+   ```
+
+1. Change directories to the parent of `cs1302-hw05` (e.g., `cd ..` from `cs1302-hw05`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-hw05 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
