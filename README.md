@@ -96,7 +96,7 @@ will serve as a helpful study guide for the exam.
 1. Create a `Driver` program using the code below but **don't run it yet**. Make sure you place the file in the proper directory within `src`. 
    Before running the code, we want you to trace through it (illustrate it, like we did above) carefully to make sure you understand it. 
 
-   * For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
+   * For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`** (only these three blocks for now), draw a diagram that 
      illustrates any nodes that have been created along with their associated `str` and `next` references. 
      Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
      the object it references. **Redraw the entire picture after each line.** Here are some things
@@ -108,46 +108,46 @@ will serve as a helpful study guide for the exam.
         * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
           should also be included in the diagram.
           
-   ```java
-   package cs1302.hw05;
+        ```java
+        package cs1302.hw05;
 
-   public class Driver {
+        public class Driver {
    
-       public static void main(String[] args) {
+            public static void main(String[] args) {
 
-           // CODE BLOCK 1
-           Node a = new Node("Joe");
-           a.setItem("Billy");
+                // CODE BLOCK 1
+                Node a = new Node("Joe");
+                a.setItem("Billy");
         
-           // CODE BLOCK 2
-           new Node("Linda", a);
+                // CODE BLOCK 2
+                new Node("Linda", a);
         
-           // CODE BLOCK 3
-           Node b = new Node("Juno");
-           b.setNext(a);
-           a.setNext(new Node("Sally"));
-           b.getNext().getNext().setNext(new Node("Barry"));
+                // CODE BLOCK 3
+                Node b = new Node("Juno");
+                b.setNext(a);
+                a.setNext(new Node("Sally"));
+                b.getNext().getNext().setNext(new Node("Barry"));
         
-           // CODE BLOCK 4
-           Node c = b.getNext().getNext();
-           c.getNext().setNext(new Node("Simon"));
+                // CODE BLOCK 4
+                Node c = b.getNext().getNext();
+                c.getNext().setNext(new Node("Simon"));
 
-           // CODE BLOCK 5
-           System.out.println(c.getNext().getNext().getNext());
-           System.out.println(b.getItem());
-           System.out.println(a.getNext().getNext().getItem());
-           System.out.println(c.getNext().getNext().getItem());
+                // CODE BLOCK 5
+                System.out.println(c.getNext().getNext().getNext());
+                System.out.println(b.getItem());
+                System.out.println(a.getNext().getNext().getItem());
+                System.out.println(c.getNext().getNext().getItem());
 
-           // CODE BLOCK 6
-           a.setNext(new Node("Simone"));
+                // CODE BLOCK 6
+                a.setNext(new Node("Simone"));
 
-           // CODE BLOCK 7
-           System.out.println(a.getNext().getNext());
+                // CODE BLOCK 7
+                System.out.println(a.getNext().getNext());
         
-       } // main
+            } // main
 
-   } // Driver
-   ```
+        } // Driver
+        ```
 
 1. For this checkpoint (code blocks 1-3), there is no output. However, we've provided the sample
    solutions for the exercise so far in [CP1.md](CP1.md). Please check your answers closely and
