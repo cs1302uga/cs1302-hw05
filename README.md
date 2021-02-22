@@ -37,26 +37,48 @@ will serve as a helpful study guide for the exam.
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw05.git
    ```
 
-1. Change into the `cs1302-hw05` directory that was just created and look around. You should see a `Node` class
-   in the `src` directory. This class is very similar to the `Node` class used in the
-   [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/adt-and-links/adt-and-links.md)
+1. Change into the `cs1302-hw05` directory that was just created and look around.  There should be
+   almost nothing there! That's okay. 
 
-   <!-- Use the following to download the JAR file that accompanies your `cs1302-phased-list` project:
+   We are going to use an external library file, in `.jar` format, containing compiled Java code (.class) files as our "starter code" for this homework.
+   The library was created by your instructors and will be the same library we give you for your next project (`cs1302-phased-list`). We
+   will explain what we mean by "external library file" in just a minute. For now, go ahead and download the file by executing the 
+   command below from directly within your `cs1302-hw05` directory.
    
    ```
-   $ wget ##INSERT LINK HERE
+   $ wget --no-check-certificate https://webwork.cs.uga.edu/~mepcott/cs1302-phased-list/1/phase1.jar
    ```
    
-   **NOTE:** This is a separate download. When you followed (or follow) the instructions provided
-   in the project description for how to download the project, you will automatically get a copy of
-   the JAR file that you can use with the project.
-   -->
+1. What is a JAR file?
+
+   In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single compressed file. Think of it sort of like a Zip file
+   for compiled Java code (`.class` files). The author of the library has provided you with a way to use the code but not see the source code.
+   Typically a JAR file contains the package directories and `.class` files for a library. This is just like the `bin` directory that you are used to, except 
+   it's all bundled into a single file. For example, the `phase1.jar` file contains the package directories and `.class` files for 
+   `cs1302.adt.Node` along with a few other things that we will ignore in this homework assignment.
+   
+   If you are in the same directory as `phase1.jar`, then you can use the following command to take peek into the archive:
+   
+   ```
+   $ jar -tf phase1.jar
+   ```
+
+   The class we are interested in using in this homework is `cs1302.adt.Node`, which is very similar to the `Node` class used in lecture and in
+   the [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/adt-and-links/adt-and-links.md).
+
+   You should also notice that the top-level directory in the JAR file is `cs1302`, which means that the JAR file itself can serve as the default package 
+   for compiled code--this is why we use with `-cp` in examples given elsewhere in this project description.
+
+1. **Compiling code with a JAR File**
+
+   If code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp phase1.jar`. If your
+   code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
+   the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path).
    
 1. For convenience, here is a link to the 
-   [`Node` API Documentation](https://webwork.cs.uga.edu/~bjb211/node-doc/cs1302/hw05/Node.html).
-   What is the FQN of the _package_ that contains `Node`?
+   [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-phased-list/1/cs1302/adt/Node.html) which includes a nice UML diagram.
 
-1. Consider the following example code snippet:
+1. Now, consider the following example code snippet:
    
    ```java
    Node example = null;                 // line 1
@@ -174,9 +196,9 @@ will serve as a helpful study guide for the exam.
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
    1. Run `cs1302.list.Driver`.
    
-<!--   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
+   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
    into `bin`; and ii) the compiled code in the JAR file. You will need to place the paths to the default 
-   package locations for both on the class path in order to run your program. -->
+   package locations for both on the class path in order to run your program.
    
 1. Write the output from the program in your notes. If your output for lines 10, 11, 12, and 13 (from
    `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
