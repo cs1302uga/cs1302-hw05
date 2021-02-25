@@ -194,17 +194,16 @@ will serve as a helpful study guide for the exam.
 
 1. Make sure you are in the `cs1302-hw05` directory. In your notes, write the exact command to:
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code. You may need
-      to import any class(es) that are contained in external packages.
-
-      **NOTE:** This program has dependencies on compiled code in two locations: 
-      
-      i) the compiled code you placed into `bin`; and 
-      ii) the compiled code in the JAR file. 
-      
-      You will need to place the paths to the default package locations for both on the class path in order 
-      to run your program. You can accomplish this using following option to `javac`: `-cp bin:phase1.jar`.
+      to import any class(es) that are contained in external packages and add the JAR file to the classpath since
+      `Driver` depends on `Node`.
 
    1. Run `cs1302.list.Driver`.
+
+      **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
+      ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
+      both on the class path in order to run your program. You can accomplish this using following option to 
+      `javac`: `-cp bin:phase1.jar`.
+
       
 1. Write the output from the program in your notes. If your output for lines 10, 11, 12, and 13 (from
    `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
