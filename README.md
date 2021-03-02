@@ -197,7 +197,7 @@ will serve as a helpful study guide for the exam.
       to import any class(es) that are contained in external packages and add the JAR file to the classpath since
       `Driver` depends on `Node`.
 
-   1. Run `cs1302.list.Driver`.
+   1. Run `cs1302.hw05.Driver`.
 
       **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
       ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
