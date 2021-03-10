@@ -2,7 +2,7 @@
 
 ![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
 
-This class exercise explores how to work with nodes commonly used in linked lists. 
+This homework assignment explores how to work with nodes commonly used in linked lists. 
 
 ## Prerequisite Knowledge
 
