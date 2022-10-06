@@ -205,10 +205,9 @@ will serve as a helpful study guide for the exam.
       `java`: `-cp bin:phase1.jar`. You may also need to import any classes used from the JAR file.
 
       
-1. Write the output from the program in your notes. If your output for lines 10, 11, 12, and 13 (from
-   `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
-   program execution, then make a note of it, then try to fix your diagrams and output 
-   before claiming this checkpoint.
+1. Write the output from the program in your notes. If your output for the four lines under `CODE BLOCK 5` 
+   and the line under `CODE BLOCK 7` do not match the output from the program execution, then make a note of it, 
+   then try to fix your diagrams and output before claiming this checkpoint.
    
 1. Add the actual output from running the application to your `SUBMISSION.md` file as explained in 
    the submission instructions below. 
