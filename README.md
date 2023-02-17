@@ -58,7 +58,7 @@ will serve as a helpful study guide for the exam.
    ```
 
    The class we are interested in using in this homework is `cs1302.adt.Node`, which is very similar to the `Node` class used in lecture and in
-   the [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/adt-and-links/adt-and-links.md).
+   the [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/adt-and-links/adt-and-links.md).
 
    You should also notice that the top-level directory in the JAR file is `cs1302`, which means that the JAR file itself can serve as the default package 
    for compiled code--this is why we use with `-cp` in examples given elsewhere in this project description.
@@ -67,11 +67,12 @@ will serve as a helpful study guide for the exam.
 
    If code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp lib/cs1302-str-list.jar`. 
    If your code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
-   the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path).
+   the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages2.md#setting-the-class-path).
    
 1. For convenience, here is a link to the 
    [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-str-list/cs1302/adt/Node.html) (May require a VPN connection)
-   which includes a UML diagram for the class.
+   which includes a UML diagram for the class. If you haven't done so already, take a few minutes to read through the code
+   examples given under the UML diagram and take note of the methods available in the `Node` class.
 
 1. Now, consider the following example code snippet:
    
