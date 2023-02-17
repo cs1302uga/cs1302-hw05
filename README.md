@@ -38,29 +38,23 @@ will serve as a helpful study guide for the exam.
    ```
 
 1. Change into the `cs1302-hw05` directory that was just created and look around.  There should be
-   almost nothing there! That's okay. 
-
-   We are going to use an external library file, in `.jar` format, containing compiled Java code (.class) files as our "starter code" for this homework.
-   The library was created by your instructors and will be the same library we give you for your next project (`cs1302-phased-list`). We
-   will explain what we mean by "external library file" in just a minute. For now, go ahead and download the file by executing the 
-   command below from directly within your `cs1302-hw05` directory.
-   
-   ```
-   $ wget --no-check-certificate https://webwork.cs.uga.edu/~mepcott/cs1302-phased-list/1/phase1.jar
-   ```
+   a `lib` directory that contains an external library file, in `.jar` format, containing compiled 
+   Java code (.class) files as our "starter code" for this homework.
+   The library was created by your instructors and will be the same library we give you for your next project (`cs1302-str-list`). 
+   You have used an "external library file" before (in project 1). We will also explain it further below:
    
 1. What is a JAR file?
 
    In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single compressed file. Think of it sort of like a Zip file
    for compiled Java code (`.class` files). The author of the library has provided you with a way to use the code but not see the source code.
    Typically a JAR file contains the package directories and `.class` files for a library. This is just like the `bin` directory that you are used to, except 
-   it's all bundled into a single file. For example, the `phase1.jar` file contains the package directories and `.class` files for 
+   it's all bundled into a single file. For example, the `cs1302-str-list.jar` file contains the package directories and `.class` files for 
    `cs1302.adt.Node` along with a few other things that we will ignore in this homework assignment.
    
-   If you are in the same directory as `phase1.jar`, then you can use the following command to take peek into the archive:
+   If you are in the `cs1302-hw05` directory, then you can use the following command to take a peek into the archive:
    
    ```
-   $ jar -tf phase1.jar
+   $ jar -tf lib/cs1302-str-list.jar
    ```
 
    The class we are interested in using in this homework is `cs1302.adt.Node`, which is very similar to the `Node` class used in lecture and in
@@ -71,12 +65,13 @@ will serve as a helpful study guide for the exam.
 
 1. **Compiling code with a JAR File**
 
-   If code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp phase1.jar`. If your
-   code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
+   If code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp lib/cs1302-str-list.jar`. 
+   If your code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
    the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path).
    
 1. For convenience, here is a link to the 
-   [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-phased-list/1/cs1302/adt/Node.html) which includes a nice UML diagram.
+   [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-str-list/cs1302/adt/Node.html) (May require a VPN connection)
+   which includes a UML diagram for the class.
 
 1. Now, consider the following example code snippet:
    
@@ -202,7 +197,7 @@ will serve as a helpful study guide for the exam.
       **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
       ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
       both on the class path in order to run your program. You can accomplish this using following option to 
-      `java`: `-cp bin:phase1.jar`. You may also need to import any classes used from the JAR file.
+      `java`: `-cp bin:lib/cs1302-str-list.jar`. You may also need to import any classes used from the JAR file.
 
       
 1. Write the output from the program in your notes. If your output for the four lines under `CODE BLOCK 5` 
