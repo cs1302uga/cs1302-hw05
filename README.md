@@ -205,8 +205,10 @@ will serve as a helpful study guide for the exam.
    and the line under `CODE BLOCK 7` do not match the output from the program execution, then make a note of it, 
    then try to fix your diagrams and output before claiming this checkpoint.
    
-1. Add the actual output from running the application to your `SUBMISSION.md` file as explained in 
-   the submission instructions below. 
+1. Add the actual output from running the application to a file called `SUBMISSION.md`. This file should be located
+   directly within the `cs1302-hw05` directory. Go ahead and add this output now - the next checkpoint will have you
+   change the code, so it's best to save this output now. The expected format of this file can be found below
+   in the "Submission Steps".
    
 <hr/>
 
@@ -216,7 +218,7 @@ will serve as a helpful study guide for the exam.
 
 ### Checkpoint 3 Steps
 
-1. In `Driver.java`, remove the last two Java instructions (code blocks 6 and 7) from the `main` method. 
+1. In `Driver.java`, remove (or comment out) the last two Java instructions (code blocks 6 and 7) from the `main` method. 
    These two lines are:
 
    ```java
