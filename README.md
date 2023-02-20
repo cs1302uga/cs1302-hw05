@@ -262,7 +262,8 @@ will serve as a helpful study guide for the exam.
    ```
 
 1. At the end of the `main` method of `Driver.java`, add the following lines of code
-   if you haven't already:
+   if you haven't already. **Do not catch the `NullPointerException` if thrown by any
+   of these lines**:
    
    ```java
    printNode(a, 1);
