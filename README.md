@@ -39,7 +39,7 @@ will serve as a helpful study guide for the exam.
 
 1. Change into the `cs1302-hw05` directory that was just created and look around.  There should be
    a `lib` directory that contains an external library file, in `.jar` format, containing compiled 
-   Java code (.class) files as our "starter code" for this homework.
+   Java code (`.class`) files as our "starter code" for this homework.
    The library was created by your instructors and will be the same library we give you for your next project (`cs1302-str-list`). 
    You have used an "external library file" before (in project 1). We will also explain it further below:
    
@@ -61,7 +61,7 @@ will serve as a helpful study guide for the exam.
    the [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/adt-and-links/adt-and-links.md).
 
    You should also notice that the top-level directory in the JAR file is `cs1302`, which means that the JAR file itself can serve as the default package 
-   for compiled code--this is why we use with `-cp` in examples given elsewhere in this project description.
+   for compiled code — this is what we use with `-cp` in the examples of this project description.
 
 1. **Compiling code with a JAR File**
 
@@ -70,7 +70,7 @@ will serve as a helpful study guide for the exam.
    the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages2.md#setting-the-class-path).
    
 1. For convenience, here is a link to the 
-   [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-str-list/cs1302/adt/Node.html) (May require a VPN connection)
+   [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-str-list/cs1302/adt/Node.html) (may require a VPN connection)
    which includes a UML diagram for the class. If you haven't done so already, take a few minutes to read through the code
    examples given under the UML diagram and take note of the methods available in the `Node` class.
 
@@ -83,7 +83,7 @@ will serve as a helpful study guide for the exam.
    ```
    
    **We can illustrate this snippet by drawing a diagram for the first line**, 
-   then **redrawing the entire driagram after subsequent lines.** Here are the 
+   then **redrawing the entire diagram after subsequent lines.** Here are the 
    three corresponding diagrams, one for each line in the example:
    
    ```
@@ -197,7 +197,7 @@ will serve as a helpful study guide for the exam.
 
       **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
       ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
-      both on the class path in order to run your program. You can accomplish this using following option to 
+      both on the class path in order to run your program. You can accomplish this by using the following option to 
       `java`: `-cp bin:lib/cs1302-str-list.jar`. You may also need to import any classes used from the JAR file.
 
       
@@ -206,9 +206,9 @@ will serve as a helpful study guide for the exam.
    then try to fix your diagrams and output before claiming this checkpoint.
    
 1. Add the actual output from running the application to a file called `SUBMISSION.md`. This file should be located
-   directly within the `cs1302-hw05` directory. Go ahead and add this output now - the next checkpoint will have you
+   directly within the `cs1302-hw05` directory. Go ahead and add this output now — the next checkpoint will have you
    change the code, so it's best to save this output now. The expected format of this file can be found below
-   in the "Submission Steps".
+   under [Submission Steps](https://github.com/cs1302uga/cs1302-hw05#submission-steps).
    
 <hr/>
 
@@ -296,7 +296,7 @@ will serve as a helpful study guide for the exam.
    1. Your name and UGA ID number; and
    1. The full output of the application at the end of checkpoint 2 (before the step 3 modifications).
   
-   Here is an example of the contents of `SUBMISSION.md`.
+   Here is an example of the contents of `SUBMISSION.md`:
    
    ```
    Sally Smith (811-000-999)
@@ -308,7 +308,7 @@ will serve as a helpful study guide for the exam.
    ```
 
 1. Change directories to the parent of `cs1302-hw05` (e.g., `cd ..` from `cs1302-hw05`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
+   to make a backup `.tar` file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
@@ -318,7 +318,7 @@ will serve as a helpful study guide for the exam.
    ```
    
    Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
-   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   in that output. If successful, the submit command creates a new receipt file in the directory you 
    submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
    Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
 
