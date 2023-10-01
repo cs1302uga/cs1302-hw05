@@ -197,7 +197,7 @@ will serve as a helpful study guide for the exam.
 
       **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
       ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
-      both on the class path in order to run your program. You can accomplish this using following option to 
+      both on the class path in order to run your program. You can accomplish this by using the following option to 
       `java`: `-cp bin:lib/cs1302-str-list.jar`. You may also need to import any classes used from the JAR file.
 
       
