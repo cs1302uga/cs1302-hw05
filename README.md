@@ -1,6 +1,6 @@
 # cs1302-hw05 Lovable Linked Lists 
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 This homework assignment explores how to work with nodes commonly used in linked lists. 
 
@@ -17,7 +17,7 @@ and stacks in solving typical problems.  Generate user-facing API documentation 
 
 ## Questions
 
-In your notes, clearly answer the following questions. These instructions assume that you are 
+In your notes, answer the following questions. These instructions assume that you are 
 logged into the Odin server. 
 
 **NOTE:** For each step, please provide in your notes the full command that you typed to make the related 
@@ -65,7 +65,7 @@ will serve as a helpful study guide for the exam.
 
 1. **Compiling code with a JAR File**
 
-   If code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp lib/cs1302-str-list.jar`. 
+   If the code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp lib/cs1302-str-list.jar`. 
    If your code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
    the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages2.md#setting-the-class-path).
    
@@ -197,7 +197,7 @@ will serve as a helpful study guide for the exam.
 
       **NOTE:** This program has dependencies on compiled code in two locations: i) the compiled code you placed into `bin`; and 
       ii) the compiled code in the JAR file. You will need to place the paths to the default package locations for 
-      both on the class path in order to run your program. You can accomplish this by using the following option to 
+      both on the classpath to run your program. You can accomplish this by using the following option to 
       `java`: `-cp bin:lib/cs1302-str-list.jar`. You may also need to import any classes used from the JAR file.
 
       
