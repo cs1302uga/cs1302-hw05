@@ -1,12 +1,12 @@
 # cs1302-hw05 Lovable Linked Lists 
 
-![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
+![Approved for: Fall 2024](https://img.shields.io/badge/Approved%20for-Fall%202024-green)
 
 This homework assignment explores how to work with nodes commonly used in linked lists. 
 
 ## Prerequisite Knowledge
 
-* [CSCI 1302 Reference Variable Refresher](https://github.com/cs1302uga/cs1302-tutorials/blob/master/refresher/variables.md)
+* [CSCI 1302 Reference Variable Refresher](https://cs1302uga.github.io/cs1302-book/java/variables/variables-index.html)
 
 ## Course-Specific Learning Outcomes
 
@@ -58,7 +58,7 @@ will serve as a helpful study guide for the exam.
    ```
 
    The class we are interested in using in this homework is `cs1302.adt.Node`, which is very similar to the `Node` class used in lecture and in
-   the [ADT and Links Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/adt-and-links/adt-and-links.md).
+   the [ADT and Lists Chapter](https://cs1302uga.github.io/cs1302-book/java/adt-and-links/adt-and-links-index.html).
 
    You should also notice that the top-level directory in the JAR file is `cs1302`, which means that the JAR file itself can serve as the default package 
    for compiled code — this is what we use with `-cp` in the examples of this project description.
@@ -67,7 +67,7 @@ will serve as a helpful study guide for the exam.
 
    If the code you write depends on a class in a JAR file, you will need to add the JAR file to the classpath. For example, `-cp lib/cs1302-str-list.jar`. 
    If your code has a dependency within the JAR file and another class you wrote, you will need to add both dependencies to the classpath as described in
-   the [package tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/packages2.md#setting-the-class-path).
+   the "Setting the Class Path" section of the [packages chapter](https://cs1302uga.github.io/cs1302-book/java/packages/important-notes.html#).
    
 1. For convenience, here is a link to the 
    [`Node` API Documentation](https://webwork.cs.uga.edu/~mepcott/cs1302-str-list/cs1302/adt/Node.html) (may require a VPN connection)
