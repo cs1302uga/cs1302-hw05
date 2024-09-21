@@ -43,15 +43,14 @@ will serve as a helpful study guide for the exam.
    The library was created by your instructors and will be the same library we give you for your next project (`cs1302-str-list`). 
    You have used an "external library file" before (in project 1). We will also explain it further below:
    
-1. What is a JAR file?
-
-   In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single compressed file. Think of it sort of like a Zip file
+1. In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single compressed file. Think of it sort of like a Zip file
    for compiled Java code (`.class` files). The author of the library has provided you with a way to use the code but not see the source code.
-   Typically a JAR file contains the package directories and `.class` files for a library. This is just like the `bin` directory that you are used to, except 
-   it's all bundled into a single file. For example, the `cs1302-str-list.jar` file contains the package directories and `.class` files for 
-   `cs1302.adt.Node` along with a few other things that we will ignore in this homework assignment.
+   Typically a JAR file contains the package directories and compiled `.class` files for a library. This is just like the `bin`
+   directory you are used to, except it's all bundled into a single file. For example, the `cs1302-str-list.jar` file contains
+   the package directories and `.class` files for a class called `cs1302.adt.Node` along with a few other things that we will
+   ignore in this homework assignment.
    
-   If you are in the `cs1302-hw05` directory, then you can use the following command to take a peek into the archive:
+   If you are in the `cs1302-hw05` directory, then you can use the following command to take a peek into the contents of the `.jar` file:
    
    ```
    $ jar -tf lib/cs1302-str-list.jar
@@ -61,7 +60,8 @@ will serve as a helpful study guide for the exam.
    the [ADT and Lists Chapter](https://cs1302uga.github.io/cs1302-book/java/adt-and-links/adt-and-links-index.html).
 
    You should also notice that the top-level directory in the JAR file is `cs1302`, which means that the JAR file itself can serve as the default package 
-   for compiled code — this is what we use with `-cp` in the examples of this project description.
+   for the compiled code in the JAR file (whereas `bin` is typically the default package for our compiled code) — this is what we use with
+   `-cp` in the examples of this project description.
 
 1. **Compiling code with a JAR File**
 
@@ -82,7 +82,7 @@ will serve as a helpful study guide for the exam.
    example.setNext(new Node("World"));  // line 3
    ```
    
-   **We can illustrate this snippet by drawing a diagram for the first line**, 
+   **We can illustrate this snippet by drawing a memory map diagram for the first line**, 
    then **redrawing the entire diagram after subsequent lines.** Here are the 
    three corresponding diagrams, one for each line in the example:
    
@@ -308,7 +308,7 @@ will serve as a helpful study guide for the exam.
    ```
 
 1. Change directories to the parent of `cs1302-hw05` (e.g., `cd ..` from `cs1302-hw05`). If you would like
-   to make a backup `.tar` file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
+   to make a backup `.tar` file, the instructions are in the submission steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
