@@ -1,6 +1,6 @@
 # cs1302-hw05 Lovable Linked Lists 
 
-![Approved for: Fall 2024](https://img.shields.io/badge/Approved%20for-Fall%202024-green)
+![Approved for: Spring 2025](https://img.shields.io/badge/Approved%20for-Spring%202025-blue)
 
 This homework assignment explores how to work with nodes commonly used in linked lists. 
 
